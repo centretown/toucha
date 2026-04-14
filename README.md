@@ -1,14 +1,12 @@
 # toucha
 
----
-
 PlatformIO setup for the Freenove Touch Screen (4") paint program.
 
 ---
 
 ## Setup
 
----
+The following steps will create the environment for uploading this script to the device. The udev rules and platformio steps only have to be performed once.
 
 1. Clone this repository.
 
@@ -16,13 +14,19 @@ PlatformIO setup for the Freenove Touch Screen (4") paint program.
 git clone --depth=1 https://github.com/centretown/toucha.git
 ```
 
-2.  Install [udev rules](https://docs.platformio.org/en/latest/core/installation/udev-rules.html)
+2.  Install [udev rules](https://docs.platformio.org/en/latest/core/installation/udev-rules.html) to provide platformio with upload and monitoring attributes for various serial devices.
 
 1.  Install [platformio](https://docs.platformio.org/en/latest/core/installation/index.html)
     - Select [installer script](https://docs.platformio.org/en/latest/core/installation/methods/installer-script.html)
     - Select [Local Download (macOS / Linux / Windows)](https://docs.platformio.org/en/latest/core/installation/methods/installer-script.html#local-download-macos-linux-windows)
 
-1.  Activate from the terminal
+### The steps following these are enclosed in the setup script if you're feeling bold.
+
+```bash
+ ./setup
+```
+
+1.  Activate the platformio environment from the terminal.
 
     ```bash
     source activate

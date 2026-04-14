@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+source activate
+pio pkg install --library "bodmer/TFT_eSPI@^2.5.43"
+cp TFT_eSPI_Setups/User_Setup_Select.h .pio/libdeps/ESP32-32E/TFT_eSPI
+cp -R TFT_eSPI_Setups  .pio/libdeps/ESP32-32E
+pio run -t upload
+pio device monitor
